@@ -1,0 +1,12 @@
+services:
+  rocketchat_block_iddle:
+    build: .
+    environment:
+      - SERVER_URL=${SERVER_URL}
+      - AUTH_TOKEN=${AUTH_TOKEN}
+      - USER_ID=${USER_ID}
+      - DAYS_IDDLE=${DAYS_IDDLE}
+    container_name: rocketchat_block_iddle
+    restart: always
+
+
